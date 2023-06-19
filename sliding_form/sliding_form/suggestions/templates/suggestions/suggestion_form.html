@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TalentServe - Submit Suggestion</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form method="POST" action="{% url 'suggestion_form' %}">
+                {% csrf_token %}
+                <h2 class="title">Submit Your Suggestion</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="suggestion">Suggestion:</label>
+                    <textarea id="suggestion" name="suggestion" rows="4" cols="50" required></textarea>
+                </div>
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

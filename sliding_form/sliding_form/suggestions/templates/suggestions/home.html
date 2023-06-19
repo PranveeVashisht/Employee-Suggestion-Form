@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>TalentServe</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <style>
+        .active {
+            background-color: #1D2F6F;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1 class="title">Welcome to TalentServe</h1>
+        </div>
+            <a href="{% url 'suggestion_form' %}">
+                <div class="icon-container">
+                    <img src="{% static '2593668.png' %}" alt="Feedback Icon">
+                </div>
+            </a>
+            
+        
+    </div>
+
+    <script>
+        // JavaScript code
+
+        // Get the form element
+        var form = document.getElementById('suggestion-form');
+
+        // Add event listener to the form submit event
+        form.addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Toggle the 'active' class on the container element
+            var container = document.querySelector('.container');
+            container.classList.toggle('active');
+
+            // Submit the form via AJAX or perform any other necessary actions
+            // ...
+        });
+    </script>
+</body>
+</html>

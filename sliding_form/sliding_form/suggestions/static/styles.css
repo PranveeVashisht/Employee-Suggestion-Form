@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background-color: #1D2F6F
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    background: url(https://www.talentserve.org/static/TalentServe.jpg) no-repeat center center fixed;
+    background-size:cover;
+    align-items: center;
+    position: relative;
+    
+  } 
+  
+  .welcome {
+  margin-bottom: 450px;
+  }
+  .container.active {
+    background-color: #1D2F6F; /* Changed background color when form is active */
+  }
+  .content{
+    padding:50px 100px;
+  }
+
+  .container h1.title {
+    padding: 50px;
+    margin: 0 0 20px;
+    font-size: 35px;
+    text-align: center;
+    color:#1D2F6F
+  }
+  .container h2.title {
+    padding: 50px;
+    margin: 0 0 20px;
+    font-size: 30px;
+    text-align: center;
+    color:#1D2F6F
+  }
+  
+  .container .wrapper {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 65px;
+    height: 65px;
+  }
+  
+  .icon-container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  form {
+    text-align: center;
+    
+  }
+  
+  .suggestion-input {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 25px;
+    
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  textarea {
+    height: 36.5px;
+    width: 225px;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    border: 7px yellow;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top:10px;
+  }
+ 
